@@ -1,5 +1,8 @@
 import React from "react";
 import { createGlobalStyle } from "styled-components";
+import TodoTemplate from "./components/TodoTemplate";
+
+// 특정 컴포넌트가 아닌 GlobalStyle 적용
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -11,7 +14,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <div>안녕하세요</div>
+      <TodoTemplate>안녕하세요</TodoTemplate>
     </>
   );
 }
