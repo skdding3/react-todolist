@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 import TodoTemplate from "./components/TodoTemplate";
 import TodoHead from "./components/TodoHead";
 import TodoList from "./components/TodoList";
+import TodoCreate from "./components/TodoCreate";
 
 // 특정 컴포넌트가 아닌 GlobalStyle 적용
 
@@ -19,6 +20,7 @@ function App() {
       <TodoTemplate>
         <TodoHead />
         <TodoList />
+        <TodoCreate />
       </TodoTemplate>
     </>
   );
