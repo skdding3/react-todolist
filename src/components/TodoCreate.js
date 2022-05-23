@@ -84,7 +84,7 @@ function TodoCreate() {
   const nextId = useTodoNextId();
 
   const onToggle = () => setOpen(!open);
-  const onchange = (e) => setValue(e.target.value);
+  const onChange = (e) => setValue(e.target.value);
   const onSubmit = (e) => {
     e.preventDefault(); // 새로고침 방지용
     dispatch({
@@ -108,7 +108,7 @@ function TodoCreate() {
             <Input
               autoFocus
               placeholder="Todo를 기입하고, Enter를 입력하세요"
-              onchange={onchange}
+              onChange={onChange}
               value={value}
             />
           </InsertForm>
